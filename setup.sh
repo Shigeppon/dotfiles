@@ -13,3 +13,4 @@ ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
 ln -sf $HOME/dotfiles/.bashrc_profile $HOME/.bashrc_profile
 ln -sf $HOME/dotfiles/.vim $HOME/.vim
 ln -sf $HOME/dotfiles/.profile $HOME/.profile
+ln -sf $HOME/dotfiles/.dir_colors $HOME/.dir_colors
