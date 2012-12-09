@@ -1,0 +1,5 @@
+[user]
+	name = Shigeo Sakamot
+	email = shigeo.sakamoto@gmail.com
+[core]
+	excludesfile = /Users/shigeo/.gitignore
