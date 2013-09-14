@@ -17,3 +17,4 @@ ln -sf $HOME/dotfiles/.profile $HOME/.profile
 #ln -sf $HOME/dotfiles/.dir_colors $HOME/.dir_colors
 ln -sf $HOME/dotfiles/.gitignore $HOME/.gitignore
 ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/dotfiles/.screenrc $HOME/.screenrc
