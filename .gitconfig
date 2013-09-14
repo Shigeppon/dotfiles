@@ -3,3 +3,5 @@
 	email = shigeo.sakamoto@gmail.com
 [core]
 	excludesfile = /Users/shigeo/.gitignore
+[color]
+	ui = auto

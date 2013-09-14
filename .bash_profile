@@ -1,3 +1,6 @@
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/man:$MANPATH
-
+export TERM=xterm-color
+alias ls='ls -G'
+alias ll='ls -hl'
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+source ~/.bashrc
