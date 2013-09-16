@@ -79,5 +79,13 @@ nnoremap <Space>.   :<C-u>edit $MYVIMRC<Enter>
 nnoremap <Space>s.  :<C-u>source $MYVIMRC<Enter>
 nnoremap <C-h>      :<C-u>help<Space>
 nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <silent>bb :b#<CR>
+
 
 filetype plugin indent on
+
+"mkd.vimにおいてファイルオープン時に自動的に折りたたまれないようにする
+let g:vim_markdown_folding_disabled=1
+set foldlevel=2

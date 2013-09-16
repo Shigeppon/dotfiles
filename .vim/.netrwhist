@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/shigeo/Sites/derrata/tmp/cache/views/localhost'
 let g:netrw_dirhist_2='/Users/shigeo/Sites/derrata/tmp/cache/views/localhost/products'
 let g:netrw_dirhist_3='/Users/shigeo/Sites/derrata/tmp/cache/views/localhost/products/category'
+let g:netrw_dirhist_4='/Users/shigeo/tmp/vim-markdown'
+let g:netrw_dirhist_5='/Users/shigeo/tmp'
+let g:netrw_dirhist_6='/Users/shigeo'
+let g:netrw_dirhist_7='/Users'
+let g:netrw_dirhist_8='/Users/shigeo/Documents/draft'
+let g:netrw_dirhist_9='/Users/shigeo/.vim'
