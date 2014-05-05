@@ -5,3 +5,5 @@
 	excludesfile = /Users/shigeo/.gitignore
 [color]
 	ui = auto
+[push]
+	default = simple
