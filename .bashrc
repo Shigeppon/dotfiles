@@ -1,7 +1,3 @@
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 ### gitコマンド補完とブランチ表示
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
