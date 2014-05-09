@@ -3,7 +3,11 @@
 " -------------------
 syntax on
 "colorscheme my
-colorscheme darkblue
+"colorscheme darkblue
+colorscheme molokai
+let g:molokai_original = 1
+"256色表示モードにする
+set t_Co=256
 
 "highlight LineNr ctermfg=darkyellow    " 行番号
 "highlight NonText ctermfg=darkgrey
