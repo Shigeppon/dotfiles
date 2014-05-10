@@ -2,6 +2,7 @@
 *.xcodeproj/*.pbxuser
 build
 .DS_Store
+.netrwhist
 
 #haskell用だけど全体に適用してもいいだろう
 *.o
