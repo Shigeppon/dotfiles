@@ -7,5 +7,5 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\w$(__git_ps1)\$ '
 
 export TERM=xterm-color
 export LSCOLORS=gxfxcxdxbxegedabagacad
-alias ls='ls -G'
+alias ls='ls -G --color'
 alias ll='ls -hl'
