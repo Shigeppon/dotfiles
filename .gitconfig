@@ -3,6 +3,7 @@
 	name = Shigeo Sakamoto
 [core]
 	excludesfile = /Users/shigeo/.gitignore
+	editor = vim
 [color]
 	ui = auto
 [push]
