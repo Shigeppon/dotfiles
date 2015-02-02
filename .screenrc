@@ -4,3 +4,12 @@ bind l windowlist
 caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} [%l] %{=b wb}%y/%m/%d(%D) %{=b wm}%c"
 startup_message off
 vbell off
+
+## 256色用設定で追加
+# 現在の背景色で消去する
+defbce on
+# 256色表示
+term xterm-256color
+# 新しいウィンドウを生成するときのコマンド
+shell $SHELL
+termcapinfo xterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'

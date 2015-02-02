@@ -1,1 +1,1 @@
-/Users/shigeo/dotfiles/.vim
+/home/shigeo/dotfiles/.vim
