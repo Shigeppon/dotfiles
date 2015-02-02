@@ -1,4 +1,4 @@
-" -------------------
+"-------------------
 " 色の設定
 " -------------------
 syntax on
@@ -93,3 +93,5 @@ filetype plugin indent on
 "mkd.vimにおいてファイルオープン時に自動的に折りたたまれないようにする
 let g:vim_markdown_folding_disabled=1
 set foldlevel=2
+
+execute pathogen#infect()
