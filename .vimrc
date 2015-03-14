@@ -95,3 +95,6 @@ let g:vim_markdown_folding_disabled=1
 set foldlevel=2
 
 execute pathogen#infect()
+
+"マウスでスクロール可能にする
+set mouse=a
