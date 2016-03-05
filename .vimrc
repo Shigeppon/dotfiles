@@ -44,7 +44,7 @@ set listchars=eol:$,tab:>\ ,extends:<
 "行番号を表示する
 set number
 "シフト移動幅
-set shiftwidth=2
+set shiftwidth=4
 "閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
 "検索時に大文字を含んでいたら大/小を区別
