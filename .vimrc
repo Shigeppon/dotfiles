@@ -38,13 +38,13 @@ set hidden
 "インクリメンタルサーチを行う
 set incsearch
 "タブ文字、行末など不可視文字を表示する
-set list
+"set list
 "listで表示される文字のフォーマットを指定する
 set listchars=eol:$,tab:>\ ,extends:<
 "行番号を表示する
 set number
 "シフト移動幅
-set shiftwidth=4
+set shiftwidth=2
 "閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
 "検索時に大文字を含んでいたら大/小を区別
@@ -54,7 +54,7 @@ set smartindent
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
 set smarttab
 "ファイル内の  が対応する空白の数
-set tabstop=4
+set tabstop=2
 "カーソルを行頭、行末で止まらないようにする
 "set whichwrap=b,s,h,l,<,>,[,]
 "検索をファイルの先頭へループしない
@@ -86,7 +86,6 @@ nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 nnoremap <silent>bp :bprevious<CR>
 nnoremap <silent>bn :bnext<CR>
 nnoremap <silent>bb :b#<CR>
-
 
 filetype plugin indent on
 

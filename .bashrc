@@ -10,3 +10,5 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ls='ls -G'
 alias ll='ls -hl'
 
+#export HISTCONTROL=ignorespace
+export HISTCONTROL=ignoreboth
