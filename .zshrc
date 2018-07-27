@@ -6,7 +6,8 @@ export ZSH=/Users/shigeo/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="wedisagree"
+# ZSH_THEME="wedisagree"
+ZSH_THEME="candy"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -137,3 +138,5 @@ setopt inc_append_history
 # インクリメンタルからの検索
 bindkey "^R" history-incremental-search-backward
 bindkey "^S" history-incremental-search-forward
+
+export PATH=/usr/local/apache-maven-3.5.2/bin:$PATH
