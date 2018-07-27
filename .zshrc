@@ -139,4 +139,6 @@ setopt inc_append_history
 bindkey "^R" history-incremental-search-backward
 bindkey "^S" history-incremental-search-forward
 
+export GOPATH=$HOME/dev
+export PATH=$PATH:$GOPATH/bin
 export PATH=/usr/local/apache-maven-3.5.2/bin:$PATH
