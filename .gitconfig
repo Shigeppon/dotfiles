@@ -18,3 +18,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/shigeo/.stCommitMsg
+[ghq]
+	root = /Users/shigeo/dev/src
