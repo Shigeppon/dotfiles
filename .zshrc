@@ -142,3 +142,43 @@ bindkey "^S" history-incremental-search-forward
 export GOPATH=$HOME/dev
 export PATH=$PATH:$GOPATH/bin
 export PATH=/usr/local/apache-maven-3.5.2/bin:$PATH
+
+bindkey "^]" peco-src
+
+function peco-src() {
+  local src=$(ghq list --full-path | peco --query "$LBUFFER")
+  echo $src
+  if [ -n "$src" ]; then
+    BUFFER="cd $src"
+    zle accept-line
+  fi
+  zle -R -c
+}
+zle -N peco-src
+
+# プロンプトの設定
+function str_with_color() {
+  echo "%{$fg[$1]%}$2%{$rest_color%}"
+}
+
+ZSH_THEME_GIT_PROMPT_ADDED=$(str_with_color cyan '+')
+ZSH_THEME_GIT_PROMPT_MODIFIED=$(str_with_color yellow '*')
+ZSH_THEME_GIT_PROMPT_DELETED=$(str_with_color red 'x')
+ZSH_THEME_GIT_PROMPT_RENAMED=$(str_with_color blue 'o')
+ZSH_THEME_GIT_PROMPT_UNMERGED=$(str_with_color magenta '!')
+ZSH_THEME_GIT_PROMPT_UNTRACKED=$(str_with_color red '?')
+
+function my_git_status() {
+  [ $(current_branch) ] && echo "%{[94m%}($(current_branch)$(git_prompt_status)%{[94m%})"
+}
+
+DATE_TIME=$(str_with_color yellow '%D{%Y-%m-%d %K:%M}')
+USER_NAME="%{[1m[32m%}%n%{[0m%}"
+SEPARATOR2="%{[1m[32m%}@%{[0m%}"
+HOST_NAME="%{[1m[32m%}%M%{[0m%}"
+SEPARATOR3=$(str_with_color white ':')
+CURRENT_DIRECTORY=$(str_with_color green '%~')
+PROMPT_CHAR="%{[94m%}-->%# %{[0m%}"
+PROMPT='${USER_NAME}${SEPARATOR2}${HOST_NAME}${TYPE}${SEPARATOR3}${CURRENT_DIRECTORY} $(my_git_status)
+${PROMPT_CHAR}'
+
